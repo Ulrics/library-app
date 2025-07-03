@@ -2,6 +2,7 @@
     --dark: #4C4C4C;
     --bg-grey: #F8F8F8;
     --bdr-primary: #E0E0E0;
+    --light: #FFFFFF;
     --primary-orange: #DE8810;
     --negative: #FFD6D6;
 }
@@ -10,3 +11,105 @@ body {
     font-family: 'Albert Sans', sans-serif;
 }
 
+.center-container{
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.content-container{
+    width: 100%;
+    max-width: 880px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.primary-button{
+    background-color: var(--primary-orange);
+    color: var(--light);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    padding: 8px 16px 8px 16px;
+    border-radius: 10px;
+}
+
+.primary-button:hover{
+    background-color: #C57C24;
+    cursor: pointer;
+}
+
+.library-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(196px, 280px));
+    gap: 24px;
+}
+
+.book{
+    font: 400 16px/24px "Albert Sans";
+    box-sizing: border-box;
+    padding: 16px 8px 8px 16px;
+    background-color: var(--bg-grey);
+    color: var(--dark);
+    border: 1px solid var(--bdr-primary);
+    border-radius: 12px;
+}
+
+.book-title{
+    font: 500 1.25rem/2rem "Albert Sans";
+    text-overflow: ellipsis;
+}
+
+.book-info{
+    display: grid;
+    grid-template-rows: repeat(4, fr);
+    gap: 8px;
+}
+
+p{
+    margin: 0px;
+    text-overflow: ellipsis;
+}
+
+select{
+    padding: 4px 8px 4px 4px;
+    font: 400 1rem/1.5rem "Albert Sans";
+    border: 1px solid var(--bdr-primary);
+    border-radius: 8px;
+    max-width: 120px;
+    margin-top: 4px;
+    height: 36px;
+}
+
+.delete-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete{
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.delete:hover{
+    cursor: pointer;
+    background-color: var(--negative);
+}
+
+.delete img {
+    display: block;
+}
