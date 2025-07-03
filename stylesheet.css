@@ -1,0 +1,12 @@
+:root{
+    --dark: #4C4C4C;
+    --bg-grey: #F8F8F8;
+    --bdr-primary: #E0E0E0;
+    --primary-orange: #DE8810;
+    --negative: #FFD6D6;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+}
+
