@@ -3,7 +3,7 @@
     --bg-grey: #F8F8F8;
     --bdr-primary: #E0E0E0;
     --light: #FFFFFF;
-    --primary-orange: #DE8810;
+    --primary-orange: #FA9B16;
     --negative: #FFD6D6;
 }
 
@@ -30,9 +30,16 @@ body {
     margin-bottom: 16px;
 }
 
-h1 {
+h2 {
     font-size: 2rem;
     line-height: 3.5rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
     color: var(--dark);
 }

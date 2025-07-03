@@ -13,16 +13,16 @@
     <div class="center-container">
         <div class="content-container">
             <div class="nav-container">
-                <h1>Library Keeper</h1>
+                <h2>Library Keeper</h2>
                 <div class="primary-button">Add Book</div>
             </div>
             <div class="library-grid">
                 <div class="book">
                     <div class="book-info">
                         <div class="book-title">Book example</div>
-                        <p id ="author">by Author</p>
-                        <p id ="pages">100 pages</p>
-                        <select id="haveRead-select">
+                        <p>by Author</p>
+                        <p>100 pages</p>
+                        <select>
                             <option value="true">have read</option>
                             <option value="false">read</option>
                         </select>
@@ -34,5 +34,28 @@
             </div>
         </div>
     </div>
+    <dialog>
+        <h3>Add New Book</h3>
+        <form action="" method="" class="">
+            <div class="form-container__input">
+                <label for="book-title">Book title</label>
+                <input type="text" name="bookTitle" id="book-title">
+            </div>
+            <div class="form-container__input">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div class="form-container__input">
+                <label for="page-num">Number of pages</label>
+                <input type="number" name="pageNum" id="page-num">
+            </div>
+            <div class="form-container__checkbox">
+                <input type="checkbox" id="ifRead" name="ifRead" value="ifRead">
+                <label for="ifRead">Have you read it?</label>
+            </div>
+            <button type="submit">Add Book</button>
+        </form>    
+    </dialog>
+
 </body>
 </html>
