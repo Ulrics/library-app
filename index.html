@@ -27,7 +27,7 @@
                             <option value="false">read</option>
                         </select>
                     </div>
-                    <div class="delete-container">
+                    <div class="rightside-button-container">
                         <div class="delete"><img src="images/TrashSimple.svg" alt="trash icon"></div>
                     </div>
                 </div>
@@ -35,26 +35,32 @@
         </div>
     </div>
     <dialog>
-        <h3>Add New Book</h3>
-        <form action="" method="" class="">
-            <div class="form-container__input">
-                <label for="book-title">Book title</label>
-                <input type="text" name="bookTitle" id="book-title">
+        <div class="modal-container">
+            <div class="container-form">
+                <h3>Add New Book</h3>
+                <form action="" method="" class="">
+                    <div class="form-container__input">
+                        <label for="book-title">Book title</label>
+                        <input type="text" name="bookTitle" id="book-title" required>
+                    </div>
+                    <div class="form-container__input">
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="author" required>
+                    </div>
+                    <div class="form-container__input">
+                        <label for="page-num">Number of pages</label>
+                        <input type="number" name="pageNum" id="page-num" required>
+                    </div>
+                    <div class="form-container__checkbox">
+                        <input type="checkbox" id="ifRead" name="ifRead" value="ifRead">
+                        <label for="ifRead">Have you read it?</label>
+                    </div>
+                    <div class="rightside-button-container">
+                        <button type="submit">Add Book</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-container__input">
-                <label for="author">Author</label>
-                <input type="text" name="author" id="author">
-            </div>
-            <div class="form-container__input">
-                <label for="page-num">Number of pages</label>
-                <input type="number" name="pageNum" id="page-num">
-            </div>
-            <div class="form-container__checkbox">
-                <input type="checkbox" id="ifRead" name="ifRead" value="ifRead">
-                <label for="ifRead">Have you read it?</label>
-            </div>
-            <button type="submit">Add Book</button>
-        </form>    
+        </div>
     </dialog>
 
 </body>

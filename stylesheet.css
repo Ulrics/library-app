@@ -101,7 +101,7 @@ select{
     height: 36px;
 }
 
-.delete-container{
+.rightside-button-container{
     display: flex;
     justify-content: flex-end;
 }
@@ -119,4 +119,61 @@ select{
 
 .delete img {
     display: block;
+}
+
+/* dialog selectors */
+
+button {
+    background-color: var(--primary-orange);
+    color: var(--light);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    padding: 8px 16px 8px 16px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #C57C24;
+    cursor: pointer;    
+}
+
+.form-container__input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-container__checkbox{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+label {
+    font: 400 16px/24px "Albert Sans";
+    color: var(--dark);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--bdr-primary);
+    box-sizing: border-box;
+    font: 400 16px/24px "Albert Sans";
+    color: var(--dark);
+}
+
+.modal-container{
+    padding: 40px 32px 40px 32px;
+    max-width: 480px;
+    box-sizing: border-box;
+}
+
+.container-form {
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 4fr;
 }
