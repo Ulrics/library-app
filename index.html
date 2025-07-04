@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -16,52 +17,38 @@
                 <h2>Library Keeper</h2>
                 <div class="primary-button">Add Book</div>
             </div>
+            <div class="empty-state">Add a book to get started!</div>
             <div class="library-grid">
-                <div class="book">
-                    <div class="book-info">
-                        <div class="book-title">Book example</div>
-                        <p>by Author</p>
-                        <p>100 pages</p>
-                        <select>
-                            <option value="true">have read</option>
-                            <option value="false">read</option>
-                        </select>
-                    </div>
-                    <div class="rightside-button-container">
-                        <div class="delete"><img src="images/TrashSimple.svg" alt="trash icon"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <dialog>
-        <div class="modal-container">
+    <dialog id="addBookModal">
+        <form action="" method="">
             <div class="container-form">
                 <h3>Add New Book</h3>
-                <form action="" method="" class="">
-                    <div class="form-container__input">
-                        <label for="book-title">Book title</label>
-                        <input type="text" name="bookTitle" id="book-title" required>
-                    </div>
-                    <div class="form-container__input">
-                        <label for="author">Author</label>
-                        <input type="text" name="author" id="author" required>
-                    </div>
-                    <div class="form-container__input">
-                        <label for="page-num">Number of pages</label>
-                        <input type="number" name="pageNum" id="page-num" required>
-                    </div>
-                    <div class="form-container__checkbox">
-                        <input type="checkbox" id="ifRead" name="ifRead" value="ifRead">
-                        <label for="ifRead">Have you read it?</label>
-                    </div>
-                    <div class="rightside-button-container">
-                        <button type="submit">Add Book</button>
-                    </div>
-                </form>
+                <div class="form-container__input">
+                    <label for="book-title">Book title</label>
+                    <input type="text" name="bookTitle" id="book-title" required>
+                </div>
+                <div class="form-container__input">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div class="form-container__input">
+                    <label for="page-num">Number of pages</label>
+                    <input type="number" name="pageNum" id="page-num" required>
+                </div>
+                <div class="form-container__checkbox">
+                    <input type="checkbox" id="ifRead" name="ifRead" value="ifRead">
+                    <label for="ifRead">Have you read it?</label>
+                </div>
+                <div class="rightside-button-container">
+                    <button type="submit" id="submit">Add Book</button>
+                </div>
             </div>
-        </div>
+        </form>
     </dialog>
 
 </body>
+<script src="library.js"></script>
 </html>

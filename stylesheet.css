@@ -42,6 +42,8 @@ h3 {
     line-height: 2rem;
     font-weight: 700;
     color: var(--dark);
+    margin: 0px;
+    margin-bottom: 16px;
 }
 
 .primary-button{
@@ -61,7 +63,7 @@ h3 {
 
 .library-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(196px, 280px));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 24px;
 }
 
@@ -121,6 +123,18 @@ select{
     display: block;
 }
 
+.empty-state{
+    font: 500 1.25rem/2rem "Albert Sans";
+    text-overflow: ellipsis;
+    width: 100%;
+    background-color: var(--bg-grey);
+    color: var(--dark);
+    border: 1px solid var(--bdr-primary);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
 /* dialog selectors */
 
 button {
@@ -131,6 +145,7 @@ button {
     font-weight: 600;
     padding: 8px 16px 8px 16px;
     border-radius: 10px;
+    border: 0px;
 }
 
 button:hover{
@@ -156,7 +171,8 @@ label {
     color: var(--dark);
 }
 
-input {
+input[type="text"],
+input[type="number"] {
     width: 100%;
     padding: 8px;
     border-radius: 10px;
@@ -166,14 +182,26 @@ input {
     color: var(--dark);
 }
 
+/*
 .modal-container{
     padding: 40px 32px 40px 32px;
+    width: 100%;
     max-width: 480px;
     box-sizing: border-box;
 }
+*/
 
 .container-form {
     display: grid;
     gap: 16px;
     grid-template-rows: 4fr;
+}
+
+dialog{
+    border: 1px solid var(--bdr-primary);
+    border-radius: 16px;
+    padding: 48px 40px 32px 40px;
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
 }
